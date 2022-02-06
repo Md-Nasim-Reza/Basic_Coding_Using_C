@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+    char str1[100],str2[100], str3[100];
+    int len1,len2;
+    printf("Enter the first string: ");
+    scanf("%s", str1);
+    printf("Enter the second string: ");
+    scanf("%s", str2);
+    len1 = strlen(str1);
+    len2 = strlen(str2);
+    printf("First string length = %d\n", len1);
+    printf("Second string length = %d\n", len2);
+    strcat(str1,str2);
+    printf("Strcat: %s\n", str1);
+    strrev(str1);
+    printf("Strrev:%s \n", str1);
+    strcpy(str3,str2);
+    printf("Strcpy: %s\n", str3);
+    int x =  strcmp(str2,str1);
+    printf("Strcmp: %d\n", x);
+
+return 0;
+}
