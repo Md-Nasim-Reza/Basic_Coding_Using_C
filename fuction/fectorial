@@ -1,0 +1,13 @@
+
+#include<stdio.h>
+int fectorial(int f);
+main(){
+    int a=5;
+   int fact = fectorial(a);
+   printf("fectorial: %d", fact);
+}
+int fectorial(int f){
+if(f==0)
+return 1;
+return f* fectorial(f-1);
+}
