@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+main(){
+char str[100];
+int start = 0, word = 0, i=0, l=0;
+printf("please enter the string: ");
+gets(str);
+l = strlen(str);
+printf("%d\n", l);
+
+for(i=0; i<l; i++){
+    if(str[i] >= 'a' && str[i] <= 'z' && start  == 0){
+        start = 1;
+        word++;
+    }
+    else if (str[i] == ' ' && start  == 1)
+        start = 0;
+
+}
+printf("word: %d", word);
+}
