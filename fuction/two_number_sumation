@@ -1,0 +1,13 @@
+#include<stdio.h>
+int sum (int a, int b);
+main(){
+    int x=10, y=25;
+    int sumation = sum (x,y);
+     int d=4, c=34;
+    int sumation1 = sum (d,c);
+    printf("sumation:%d\n", sumation1);
+    printf("sumation: %d", sumation);
+}
+int sum (int a, int b){
+return a+b;
+}
