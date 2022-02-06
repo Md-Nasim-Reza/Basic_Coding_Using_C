@@ -1,0 +1,34 @@
+
+#include<stdio.h>
+#include<string.h>
+main(){
+char str[50];
+int i,l,n;
+puts("enter the name:");
+gets(str);
+l = strlen(str);
+for(i=0; i<l; i++){
+    if(str[i]==' ')
+        printf(" ");
+    else
+        printf("%c", str[i] -32);
+ }
+}
+
+
+
+#include<stdio.h>
+#include<string.h>
+main(){
+char str[50];
+int i,l,n;
+puts("enter the name:");
+gets(str);
+l = strlen(str);
+for(i=0; i<l; i++){
+    if(str[i]==' ')
+        printf(" ");
+    else
+        printf("%c", str[i] +32);
+ }
+}
