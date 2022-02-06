@@ -1,0 +1,17 @@
+#include<stdio.h>
+main(){
+int x,y,z;
+printf("enter the first number: ");
+    scanf("%d", &x);
+printf("enter the second number: ");
+    scanf("%d", &y);
+printf("enter the thred number: ");
+    scanf("%d", &z);
+if((x > y)&&(x > z))
+    printf("the first number is beger: %d", x);
+else if((y > x)&&(y > z))
+    printf("the second num is beger: %d", y);
+else
+    printf("the thred number is biger: %d", z);
+
+}
