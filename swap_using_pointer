@@ -1,0 +1,12 @@
+#include<stdio.h>
+main(){
+int a,b,*p,*q;
+printf("enter the two number: ");
+scanf("%d %d", &a, &b);
+p = &a;
+q = &b;
+int temporray = *p;
+*p = *q;
+*q = temporray;
+printf("sawap %d %d", *p, *q);
+}
