@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+main(){
+char str[30];
+int l,i,count=0;
+puts("enter the string:");
+gets(str);
+l = strlen(str);
+printf("char of len: %d\n", l);
+for(i=0; i<=l; i++){
+    if(str[i] =='a'|| str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
+    count++;
+}
+printf("count %d", count);
+}
