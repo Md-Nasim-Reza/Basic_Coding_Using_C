@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+main(){
+    char str[100];
+    int len,i,sum=0;
+    scanf("%s", str);
+    len = strlen(str);
+    for(i=0; i<len; i++)
+        sum+=str[i]-'0';
+    if(sum%9==0 && str[len-1]%2==0)
+        printf("YES\n");
+    else
+        printf("NO\n");
+
+}
