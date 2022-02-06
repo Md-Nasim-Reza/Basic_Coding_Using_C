@@ -1,0 +1,28 @@
+#include<stdio.h>
+main(){
+    int a[100][100], b[100][100], i, j, r, c;
+    printf("enter the row number: ");
+    scanf("%d", &r);
+    printf("enter the colum number: ");
+    scanf("%d", &c);
+    printf("first table input:\n");
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++)
+            scanf("%d", &a[i][j]);
+    }
+    printf("second table input:\n");
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++)
+            scanf("%d", &b[i][j]);
+    }
+    int sum;
+    printf("output\n");
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++){
+            sum = a[i][j] + b[i][j];
+            printf("%d\t", sum);
+            }
+    printf("\n");
+    sum = 0;
+    }
+}
