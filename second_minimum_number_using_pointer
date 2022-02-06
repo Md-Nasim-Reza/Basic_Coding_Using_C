@@ -1,0 +1,25 @@
+#include<stdio.h>
+main(){
+int i, n, array[50], *p;
+printf("enter the number: ");
+scanf("%d", &n);
+for(i=0; i<n; i++)
+    scanf("%d", &array[i]);
+p  = array;
+int min = *p;
+for(i=1; i<n; i++){
+    p++;
+    if(*p<min)
+    min = *p;
+    }
+printf("minimum: %d\n", min);
+int min1;
+if (min != array[0])
+ min1 = array[0];
+else min1 = array[1];
+for(i=0; i<n; i++){
+    if(array[i]<min1 && array[i]>min)
+    min1 = array[i];
+    }
+printf("seceond minimum: %d", min1);
+}
