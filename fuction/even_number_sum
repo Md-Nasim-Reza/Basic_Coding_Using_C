@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+int sum (int a);
+main(){
+int b;
+scanf("%d",&b);
+if(b % 2 == 1)
+b--;
+int sum2 = sum(b);
+printf("sumation: %d", sum2);
+}
+int sum (int a){
+if(a == 0)
+    return 0;
+return a + sum(a-2);
+
+}
