@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+int length(char str[]){
+int count = 0;
+while(str[count] != '\0')
+    count++;
+return count;
+
+}
+void strcopy(char dst[], char sarc[]){
+    int i, length;
+    length = strlen(sarc);
+    for(i=0; i<=length; i++)
+        dst[i]=sarc[i];
+}
+main(){
+    int len;
+    char str1[100], str2[100];
+    printf("enter first string: ");
+    gets(str1);
+    len = length(str1);
+    printf("length = \n", len);
+    strcpy(str2,str1);
+    printf("first string is %s and copid string is %s", str1, str2);
+
+    }
