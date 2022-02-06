@@ -1,0 +1,14 @@
+#include<stdio.h>
+int sum (int n, int start);
+main(){
+int b;
+scanf("%d", &b);
+int sum2 = sum(b, 2);
+printf("sumation: %d", sum2);
+}
+int sum (int n, int start){
+    if (n == 0)
+        return 0;
+
+    return start + sum(--n, start+2);
+}
