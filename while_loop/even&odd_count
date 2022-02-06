@@ -1,0 +1,26 @@
+
+#include<stdio.h>
+main(){
+int i=1, number, even=0, odd=0;
+printf("enter the number:");
+scanf("%d", &number);
+    printf("even number ");
+    while(i<=number){
+        if(i%2==0){
+        printf("%d ", i);
+            even++;
+            }
+    i++;
+    }
+printf("\neven= %d", even);
+i=1;
+printf("\nOdd number ");
+  while(i<=number){
+    if(i%2!=0){
+    printf("%d ", i);
+      odd++;
+        }
+    i++;
+    }
+printf("\nodd= %d ", odd);
+}
