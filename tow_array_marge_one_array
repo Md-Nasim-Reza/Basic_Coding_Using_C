@@ -1,0 +1,23 @@
+#include <stdio.h>
+main(){
+    int i,m,n, arr_1[100],arr_2[100], arr[200],a;
+    scanf("%d", &n);
+    for(i=0; i<n; i++){
+        scanf("%d", &arr_1[i]);
+    }
+    scanf("%d", &m);
+    for(i=0; i<m; i++){
+        scanf("%d", &arr_2[i]);
+    }
+    for(i=0; i<n; i++){
+        arr[i] = arr_1[i];
+    }
+    a=0;
+    for(i=n; i<n+m; i++){
+        arr[i] = arr_2[a];
+        a++;
+    }
+    for(i=0; i<n+m; i++){
+        printf("%d ", arr[i]);
+    }
+}
