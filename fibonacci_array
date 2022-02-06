@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int i, a, n;
+    long long int first=0,sec=1,temp,array[64];
+
+    scanf("%d", &n);
+
+    array[0]=0;
+    array[1]=1;
+    for(i=2; i<=60; i++){
+        temp=first+sec;
+        first=sec;
+        sec=temp;
+        array[i]=temp;
+    }
+
+    for(i=1; i<=n; i++){
+
+    scanf("%d", &a);
+
+        printf("Fib(%d) = %lld\n", a,array[a]);
+    }
+}
+
