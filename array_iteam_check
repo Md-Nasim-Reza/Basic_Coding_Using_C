@@ -1,0 +1,21 @@
+#include<stdio.h>
+main(){
+int i,n,iteam,array[100], count=0;
+printf("enter number: ");
+    scanf("%d", &n);
+for(i=0; i<n; i++){
+    printf("enter valu number: ");
+        scanf("%d", &array[i]);
+        }
+printf("enter the iteam number: ");
+    scanf("%d", &iteam);
+
+for(i=0; i<n; i++){
+    if(array[i]==iteam)
+        count++;
+    }
+if(count > 0)
+    printf("iteam found");
+else
+    printf("iteam not found");
+}
