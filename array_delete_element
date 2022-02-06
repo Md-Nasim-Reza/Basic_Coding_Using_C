@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+main(){
+    int arr[100],i,n,delate_position;
+    scanf("%d", &n);
+    for(i=0; i<n; i++)
+        scanf("%d", &arr[i]);
+    printf("input the delate position index no:");
+    scanf("%d", &delate_position);
+    for(i=delate_position+1; i<n; i++)
+        arr[i-1] = arr[i];
+    for(i=0; i<n-1; i++)
+       printf("%d ",arr[i]);
+
+
+}
