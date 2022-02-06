@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+main(){
+int i=1, n, even=0, odd=0;
+printf("enter the number: ");
+scanf("%d", &n);
+do{
+    if(i%2==0)
+    even++;
+else
+    odd++;
+i++;
+}
+while(i<=n);
+printf("Total even number: %d", even);
+printf("\nOdd number: %d", odd);
+}
