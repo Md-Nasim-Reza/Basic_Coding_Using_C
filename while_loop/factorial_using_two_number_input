@@ -1,0 +1,15 @@
+#include<stdio.h>
+main(){
+int start_number, finished_number, fact=1;
+printf("please enter the first number: ");
+scanf("%d", &start_number);
+printf("please enter the second number: ");
+scanf("%d", &finished_number);
+
+while(start_number<=finished_number){
+    fact = fact*start_number;
+    start_number++;
+}
+printf("Factorial: %d", fact);
+
+}
