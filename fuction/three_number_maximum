@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+int max (int a, int b);
+main(){
+    int x=10, y=25, z=22;
+    int maximum = max(x,y);
+    maximum = max(maximum, z);
+    printf("%d", maximum);
+    }
+    int max (int a, int b){
+    if(a>b)
+    return a;
+    else
+    return b;
+
+}
