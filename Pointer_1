@@ -1,0 +1,18 @@
+#include<stdio.h>
+main(){
+int i,n,a[50],*p;
+printf("enter the number: ");
+scanf("%d", &n);
+for(i=0; i<n; i++)
+    scanf("%d", &a[i]);
+p = a;
+int count = 0;
+if(*p % 3 == 0)
+    count++;
+for(i=1; i<n; i++){
+    p++;
+    if(*p % 3 == 0)
+        count++;
+}
+printf("multiple: %d", count);
+}
