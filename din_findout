@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main(){
+int a, b;
+printf("enter day number:");
+scanf("%d", &a);
+b = a % 8;
+if(b == 1)
+printf("sunday");
+else if(b == 2)
+printf("monday");
+else if(b == 3)
+printf("tuesday");
+else if(b == 4)
+printf("wednesday");
+else if(b == 5)
+printf("thusday");
+else if(b == 6)
+printf(" friday");
+else if(b == 7)
+printf("satrday");
+}
