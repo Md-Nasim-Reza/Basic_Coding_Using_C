@@ -1,0 +1,9 @@
+#include<stdio.h>
+main(){
+int i, number, fact=1;
+printf("enter the number:");
+scanf("%d", &number);
+    for(i=2; i<=number; i+=2)
+    fact = fact * i;
+printf("Factorial %d ", fact);
+}
