@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+main(){
+    char str1[100],str2[100];
+    int len1,len2,i,j;
+    scanf("%s", str1);
+    scanf("%s", str2);
+    len1 = strlen(str1);
+    len2 = strlen(str2);
+    j=len1;
+    for(i=0; i<len2; i++){
+        str1[j] = str2[i];
+        j++;
+    }
+    for(i=0; i<len1+len2; i++)
+        printf("%c", str1[i]);
+
+
+}
