@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+main(){
+char str1[100],str2[100];
+int number1,number2, sum;
+printf("enter the first string: ");
+gets(str1);
+printf("enter the second string: ");
+gets(str2);
+number1= atoi(str1);
+number2 = atoi(str2);
+sum = number1+number2;
+printf("sumation: %d", sum);
+}
