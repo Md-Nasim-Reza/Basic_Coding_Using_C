@@ -11,7 +11,7 @@ for(i=0; i<l; i++){
     if(str[i]==' ')
         printf(" ");
     else
-        printf("%c", str[i] -32);
+        printf("%c", str[i] -32); /// lowercase theke upercase
  }
 }
 
@@ -29,6 +29,6 @@ for(i=0; i<l; i++){
     if(str[i]==' ')
         printf(" ");
     else
-        printf("%c", str[i] +32);
+        printf("%c", str[i] +32); /// upper case theke lowercase
  }
 }
